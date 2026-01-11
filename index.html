@@ -808,8 +808,69 @@ textarea {
 .project-link i {
   font-size: 18px;
 }
+.social-link i {
+  font-size: 18px;
+}
+
+/* ================= MOBILE & TABLET RESPONSIVE FIXES ================= */
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+  }
+
+  .profile-card {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-form > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-item {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 160px;
+    font-size: 3rem;
+  }
+
+  a[href="#contact"] {
+    bottom: 90px !important;
+  }
+
+  a[href*="wa.me"] {
+    bottom: 20px !important;
+  }
+}
 
 </style>
+
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -891,22 +952,25 @@ textarea {
     <img src="profile.jpg" alt="Krishna Nand Pandey">
   </div>
 </div>
+<div class="social-links">
+  <a href="mailto:krishnanandpandey723@gmail.com" class="social-link">
+    <i class="fas fa-envelope"></i>
+  </a>
 
-          <div class="social-links">
-  <a href="mailto:krishnanandpandey723@gmail.com" class="social-link" title="Email">📧</a>
+  <a href="https://www.linkedin.com/in/krishna-nand-pandey-857a79219/" class="social-link" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
 
-  <a href="https://www.linkedin.com/in/krishna-nand-pandey-857a79219/" 
-     class="social-link" 
-     title="LinkedIn" 
-     target="_blank">💼</a>
+  <a href="https://github.com/krishnan657" class="social-link" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
 
-  <a href="https://github.com/krishnan657" 
-     class="social-link" 
-     title="GitHub" 
-     target="_blank">💻</a>
-
-  <a href="tel:+918932025356" class="social-link" title="Phone">📱</a>
+  <a href="tel:+918932025356" class="social-link">
+    <i class="fas fa-phone"></i>
+  </a>
 </div>
+
+         
         </div>
       </div>
     </div>
@@ -1181,40 +1245,50 @@ textarea {
     <div style="display:grid; grid-template-columns: repeat(2,1fr); gap:1.5rem; margin-bottom:2rem;">
       
       <div class="contact-item">
-        <div class="contact-icon">📧</div>
-        <div class="contact-details">
-          <h3>Email</h3>
-          <a href="mailto:krishnanandpandey723@gmail.com">krishnanandpandey723@gmail.com</a>
-        </div>
-      </div>
+  <div class="contact-icon">
+    <i class="fas fa-envelope"></i>
+  </div>
+  <div class="contact-details">
+    <h3>Email</h3>
+    <a href="mailto:krishnanandpandey723@gmail.com">Send Email</a>
+  </div>
+</div>
+
 
       <div class="contact-item">
-        <div class="contact-icon">📱</div>
-        <div class="contact-details">
-          <h3>Phone</h3>
-          <a href="tel:+918932025356">+91 8932025356</a>
-        </div>
-      </div>
+  <div class="contact-icon">
+    <i class="fas fa-phone"></i>
+  </div>
+  <div class="contact-details">
+    <h3>Phone</h3>
+    <a href="tel:+918932025356">Call Now</a>
+  </div>
+</div>
+
+
+     <div class="contact-item">
+  <div class="contact-icon">
+    <a href="https://www.linkedin.com/in/krishna-nand-pandey-857a79219/" target="_blank" style="color:white;">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  <div class="contact-details">
+    <h3>LinkedIn</h3>
+  </div>
+</div>
+
 
       <div class="contact-item">
-        <div class="contact-icon">💼</div>
-        <div class="contact-details">
-          <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/krishna-nand-pandey-857a79219/" target="_blank">
-            linkedin.com/in/krishna-nand-pandey
-          </a>
-        </div>
-      </div>
+  <div class="contact-icon">
+    <a href="https://github.com/krishnan657" target="_blank" style="color:white;">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  <div class="contact-details">
+    <h3>GitHub</h3>
+  </div>
+</div>
 
-      <div class="contact-item">
-        <div class="contact-icon">💻</div>
-        <div class="contact-details">
-          <h3>GitHub</h3>
-          <a href="https://github.com/krishnan657" target="_blank">
-            github.com/krishnan657
-          </a>
-        </div>
-      </div>
 
     </div>
 
